@@ -1,0 +1,23 @@
+.App {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.FadeEnter {
+    opacity: 0;
+}
+.FadeExit {
+    opacity: 1;
+}
+.FadeEnterActive {
+    opacity: 1;
+}
+.FadeExitActive {
+    opacity: 0;
+}
+.FadeEnterActive,
+.FadeExitActive {
+    transition: opacity 300ms;
+}

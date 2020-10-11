@@ -1,0 +1,21 @@
+.Header {
+    position: relative;
+    background-color: #181717;
+    height: 10%;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    padding: 10px;
+    box-sizing: border-box;
+    .Menu {
+        position: absolute;
+        right: 0;
+    }
+    @media (max-width: 900px) {
+        position: fixed;
+        height: 55px;
+    }
+}

@@ -1,0 +1,62 @@
+p {
+    white-space: pre-line;
+    line-height: 25px;
+    margin: 5px;
+}
+
+.MessageContainer {
+    display: flex;
+    flex-direction: column;
+    &.Sent {
+        align-self: flex-end;
+        .MessageTop {
+            flex-direction: row-reverse;
+            p {
+                margin-right: 15px;
+            }
+        }
+        .MessageBody {
+            color: white;
+            background: #0b93f6;
+        }
+    }
+    &.Received {
+        align-self: flex-start;
+        .MessageTop {
+            p {
+                margin-left: 15px;
+            }
+        }
+        .MessageBody {
+            background: #e5e5ea;
+            color: black;
+        }
+    }
+    .MessageTop {
+        display: flex;
+        align-items: center;
+
+        .Username {
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .Timestamp {
+            color: white;
+            font-size: 12px;
+            line-height: 0;
+        }
+    }
+
+    .MessageBody {
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        text-align: left;
+        padding: 5px 20px;
+        margin: 10px 0;
+        margin-bottom: 12px;
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
